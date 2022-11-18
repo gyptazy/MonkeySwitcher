@@ -60,6 +60,8 @@ Building from scratch can be done by simply running the following command from t
 $> make
 ```
 
+Afterwards, you will find your ready to use application within the `.build` directory.
+
 ## Motivation
 This app has been created after I switched from an older Bluetooth Apple Keyboard to the new Magic Keyboard. While the old one could just connect to any device while it was idle the new one refused to connect. I found similar solutions to solve this issue by other commercial apps but this was not the way to go for me. After a short look I found a hint regarding [blueutil](https://github.com/toy/blueutil), a cli tool for Bluetooth management on macOS, which is also available in [Homebrew](https://brew.sh) and [MacPorts](https://www.macports.org/). After writing a short Shell script this worked pretty fine and I decided to create a macOS app. However, there were too approaches:
 

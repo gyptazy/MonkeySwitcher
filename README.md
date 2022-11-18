@@ -63,13 +63,32 @@ $> make
 ## Motivation
 This app has been created after I switched from an older Bluetooth Apple Keyboard to the new Magic Keyboard. While the old one could just connect to any device while it was idle the new one refused to connect. I found similar solutions to solve this issue by other commercial apps but this was not the way to go for me. After a short look I found a hint regarding [blueutil](https://github.com/toy/blueutil), a cli tool for Bluetooth management on macOS, which is also available in [Homebrew](https://brew.sh) and [MacPorts](https://www.macports.org/). After writing a short Shell script this worked pretty fine and I decided to create a macOS app. However, there were too approaches:
 
- * Package a shell script as a native macOS application
+ * Package a shell script as a macOS application
  * Create a native Swift macOS application
 
 While this was in some case urgent to me I decided to stick with the Shell packaging approach which also should represent a PoC for packages script files as macOS application that can be used by everyone without further knowledge in Shell, Python etc. Just some days later some mates came back to me and loved this handy tool to switch (mostly) their keyboards at home between personal and business MacBooks. This is the motivation to create a native Swift application in the near future. So, stay tuned.
 
+## FAQ
+### The application can not be opened
+Apple made several changes to make developers life hard when not publishing apps within the AppStore. Gatekeeper makes it more difficult to run unsigned application. However, you may still use this app.
+
+Press and hold `control` (or `alt`) key on your keyboard while right clicking on the application and press open.
+
+Afterwards, you may need to grant permissions to execute the application. As a result, go to the system settings, security, default and grant to start the app.
+
+In some cases it may still be needed to remove the quarantine mode from the application by running:
+```
+sudo xattr -dr com.apple.quarantine MonkeySwitcher.app/
+```
+### Can is define more devices
+Currently, you can only switch between single device within the config file. Multiple ones and a GUI mode will be part of the Swift rewrite.
+
+### How do I use the app?
+Running the application is a toggle - when the device is connected it gets disconnected. If the device is currently disconnected it gets connected.
+
+
 ## Support
-If you need further help or found bugs feel free to raise an issue.
+First, please take a short look within the FAQ chapter if your question is already covered. If you need further help or found bugs feel free to raise an issue.
 
 ## Copyright
 ### MonkeySwitcher

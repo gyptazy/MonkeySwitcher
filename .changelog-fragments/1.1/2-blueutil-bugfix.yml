@@ -1,0 +1,4 @@
+fixed:
+  - Fixed amd64 blueutil binary error
+changed:
+  - Changed to a new logo and icon file

@@ -1,6 +1,6 @@
 # MonkeySwitcher
 
-<img align="left" src="https://gyptazy.ch/wp-content/uploads/2022/11/MonkeySwitchter.jpg"/>
+<img align="left" src="https://cdn.gyptazy.ch/images/MonkeySwitchter.jpg"/>
 
 ## General
 Switch your Bluetooth capable devices like Magic Keyboard 2, Track Pad, AirPods, etc. between multiple Macs (e.g. personal & business) with a single click for macOS. This can especially be helpful to avoid connecting you wired USB-C to Lightning cable to your Magic Keyboard to establish a peering session to another Mac and may fasten up your workflow. However, initially this must be done on all Macs where you like to use this app to be a known and authorized Bluetooth device. This application ships binary versions for amd64 and arm64 architectures of [blueutil](https://github.com/toy/blueutil). More can be found within the [LICENSE.md](LICENSE.md) file.

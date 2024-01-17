@@ -11,7 +11,7 @@ Installing and using this application is as easy as all other macOS application.
 *Please obtain the latest release from GitHub*
 
 **QuickSteps**:
-* Download [MonkeySwitcher-v0.8b.zip](https://gyptazy.ch/monkeyswitcher/MonkeySwitcher-v0.8b.zip)
+* Download [MonkeySwitcher-v1.2.zip](https://cdn.gyptazy.ch/files/MonkeySwitcher_macOS_1.2.tar.gz)
 * Unzip the file
 * Drag the application to your Application folder
 * Create the config file `.monkeyswitcher.config` in your home directory
